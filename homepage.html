@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Desenvolvedor Web</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="w-100 h-100">
+
+    <!-- Cabeçalho Fixo -->
+    <header id="header" class="fixed-top transition-all duration-300">
+        <nav class="navbar navbar-expand-md navbar-dark header-bg shadow-md">
+            <div class="container">
+                <a class="navbar-brand fs-2 fw-bold" href="#inicio">SN.</a>
+                <button id="menu-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mobile-menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item"><a href="#sobre" class="nav-link mx-2">Sobre</a></li>
+                        <li class="nav-item"><a href="#habilidades" class="nav-link mx-2">Habilidades</a></li>
+                        <li class="nav-item"><a href="#projetos" class="nav-link mx-2">Projetos</a></li>
+                        <li class="nav-item"><a href="#contato" class="btn btn-outline-highlight ms-2 px-4 py-2">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. Seção de Início -->
+        <section id="inicio" class="min-vh-100 d-flex flex-column justify-content-center">
+            <div class="fade-in-section">
+                <p class="fs-5 highlight mb-3">Olá, meu nome é</p>
+                <h1 class="display-1 fw-bolder text-slate-200">Seu Nome.</h1>
+                <h2 class="display-2 fw-bolder text-slate-400 mt-2">Eu construo coisas para a web.</h2>
+                <p class="mt-4 col-lg-7 text-slate-400">
+                    Sou um desenvolvedor focado em criar experiências digitais excepcionais. Atualmente, estou focado em construir produtos acessíveis e centrados no ser humano.
+                </p>
+                <a href="#projetos" class="btn btn-outline-highlight fs-5 mt-5 px-5 py-3 rounded-2 transition-all duration-300 transform hover-scale-105">
+                    Veja meus projetos!
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Sobre Mim -->
+        <section id="sobre" class="py-5 my-5 fade-in-section">
+            <h2 class="section-heading fs-2 fw-bold mb-5 d-flex align-items-center">
+                <span class="highlight me-3 font-monospace">01.</span> Sobre Mim
+            </h2>
+            <div class="row align-items-center g-5">
+                <div class="col-md-7 text-slate-400">
+                    <p>Olá! Meu nome é [Seu Nome] e eu adoro criar coisas que vivem na internet. Meu interesse em desenvolvimento web começou em [Ano] quando decidi tentar editar um template de um blog — o que me ensinou muito sobre HTML & CSS!</p>
+                    <p>Avançando para hoje, tive o privilégio de trabalhar em uma <span class="highlight">agência de publicidade</span>, uma <span class="highlight">start-up</span> e uma <span class="highlight">grande corporação</span>. Meu foco principal atualmente é construir produtos e experiências acessíveis e inclusivas.</p>
+                    <p>Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:</p>
+                    <ul class="list-unstyled row">
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>JavaScript (ES6+)</li>
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>React</li>
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>Node.js</li>
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>TypeScript</li>
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>Bootstrap 5</li>
+                        <li class="col-sm-6 d-flex align-items-center"><span class="highlight me-2">▹</span>Next.js</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <div class="group position-relative w-100 mx-auto" style="max-width: 300px;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-info rounded-3 transform -rotate-3 group-hover-rotate-0 transition-transform duration-300 highlight-bg"></div>
+                        <img src="https://placehold.co/400x400/0a192f/ccd6f6?text=Sua+Foto" alt="Sua Foto Profissional" class="rounded-3 position-relative z-10 w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Habilidades e Tecnologias -->
+        <section id="habilidades" class="py-5 my-5 fade-in-section">
+            <h2 class="section-heading fs-2 fw-bold mb-5 d-flex align-items-center">
+                <span class="highlight me-3 font-monospace">02.</span> Habilidades
+            </h2>
+            <div class="row text-center g-4">
+                <!-- Ícones de exemplo -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-js-square display-3"></i><p>JavaScript</p></div></div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-react display-3"></i><p>React</p></div></div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-node-js display-3"></i><p>Node.js</p></div></div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-html5 display-3"></i><p>HTML5</p></div></div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-bootstrap display-3"></i><p>Bootstrap</p></div></div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="hover-highlight-effect"><i class="fab fa-python display-3"></i><p>Python</p></div></div>
+            </div>
+        </section>
+
+        <!-- 4. Projetos em Destaque -->
+        <section id="projetos" class="py-5 my-5 fade-in-section">
+            <h2 class="section-heading fs-2 fw-bold mb-5 d-flex align-items-center">
+                <span class="highlight me-3 font-monospace">03.</span> Projetos
+            </h2>
+            <div class="row g-5">
+                <!-- Projeto 1 -->
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <a href="#"><img src="https://placehold.co/600x360/0a192f/64ffda?text=Projeto+1" alt="Imagem do Projeto 1" class="rounded-3 w-100"></a>
+                        </div>
+                        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+                            <p class="highlight font-monospace">Projeto em Destaque</p>
+                            <h3 class="fs-3 fw-bold text-slate-200"><a href="#" class="text-decoration-none text-slate-200 hover-highlight">Nome do Projeto 1</a></h3>
+                            <div class="card-project p-4 rounded-3 shadow my-3">
+                                <p class="text-slate-400">Uma descrição concisa sobre o projeto, o problema que ele resolve e as tecnologias utilizadas. Mantenha o texto interessante e direto ao ponto.</p>
+                            </div>
+                            <div class="my-3 text-slate-400 font-monospace"><span class="me-3">React</span><span class="me-3">Bootstrap 5</span><span class="me-3">Node.js</span></div>
+                            <div>
+                                <a href="#" class="text-slate-300 me-3 fs-4 hover-highlight"><i class="fab fa-github"></i></a>
+                                <a href="#" class="text-slate-300 fs-4 hover-highlight"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 text-lg-start order-lg-1 order-2 mt-4 mt-lg-0">
+                            <p class="highlight font-monospace">Projeto em Destaque</p>
+                            <h3 class="fs-3 fw-bold text-slate-200"><a href="#" class="text-decoration-none text-slate-200 hover-highlight">Nome do Projeto 2</a></h3>
+                            <div class="card-project p-4 rounded-3 shadow my-3">
+                                <p class="text-slate-400">Outra descrição sobre um projeto diferente. Fale sobre os desafios e como você os superou, mostrando suas habilidades de resolução de problemas.</p>
+                            </div>
+                            <div class="my-3 text-slate-400 font-monospace"><span class="me-3">Vue.js</span><span class="me-3">Firebase</span><span class="me-3">Bootstrap 5</span></div>
+                            <div>
+                                <a href="#" class="text-slate-300 me-3 fs-4 hover-highlight"><i class="fab fa-github"></i></a>
+                                <a href="#" class="text-slate-300 fs-4 hover-highlight"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                         <div class="col-lg-7 order-lg-2 order-1">
+                            <a href="#"><img src="https://placehold.co/600x360/0a192f/64ffda?text=Projeto+2" alt="Imagem do Projeto 2" class="rounded-3 w-100"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contato -->
+        <section id="contato" class="py-5 my-5 text-center fade-in-section">
+            <h2 class="font-monospace highlight mb-2">04. Qual o próximo passo?</h2>
+            <h3 class="display-4 fw-bold text-slate-200 mb-3">Entre em Contato</h3>
+            <p class="col-lg-6 mx-auto text-slate-400 mb-5">
+                Estou sempre aberto a novas oportunidades e conexões. Se você tem uma pergunta ou apenas quer dizer um oi, farei o meu melhor para responder!
+            </p>
+            <a href="mailto:seuemail@exemplo.com" class="btn btn-outline-highlight fs-5 mt-4 px-5 py-3 rounded-2">
+                Diga Olá
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-4 text-center text-slate-400 small fade-in-section">
+        <div class="d-md-none mb-4">
+            <a href="#" class="text-slate-400 mx-3 fs-4"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-slate-400 mx-3 fs-4"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-slate-400 mx-3 fs-4"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>Desenvolvido por Seu Nome</p>
+        <p class="font-monospace mt-2" style="font-size: 0.75rem;">Design inspirado por Brittany Chiang</p>
+    </footer>
+
+    <!-- Ícones sociais fixos na lateral -->
+    <div class="d-none d-md-flex flex-column align-items-center position-fixed bottom-0 start-0 ms-5">
+        <a href="#" class="text-slate-400 my-3 fs-5 hover-highlight"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-slate-400 my-3 fs-5 hover-highlight"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-slate-400 my-3 fs-5 hover-highlight"><i class="fab fa-twitter"></i></a>
+        <div style="width: 1px; height: 90px; background-color: #94a3b8;"></div>
+    </div>
+     <div class="d-none d-md-flex flex-column align-items-center position-fixed bottom-0 end-0 me-5">
+       <a href="mailto:seuemail@exemplo.com" class="text-slate-400 my-3 hover-highlight text-decoration-none writing-mode-vertical-rl font-monospace small tracking-widest">
+           seuemail@exemplo.com
+       </a>
+       <div style="width: 1px; height: 90px; background-color: #94a3b8;"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Lógica para as animações de scroll
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        sections.forEach(section => observer.observe(section));
+
+        // Esconder/Mostrar header ao rolar
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.style.top = '-100px';
+            } else {
+                header.style.top = '0';
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, false);
+    </script>
+</body>
+</html>
+

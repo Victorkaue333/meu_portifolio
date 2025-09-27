@@ -1,0 +1,103 @@
+       /* Estilos e Animações Customizadas */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+        }
+
+        /* Cor de destaque */
+        .highlight {
+            color: #64ffda;
+        }
+        
+        .highlight-bg {
+            background-color: #64ffda;
+        }
+
+        .highlight-border {
+            border-color: #64ffda !important; /* Important para sobrescrever Bootstrap */
+        }
+
+        .btn-outline-highlight {
+            color: #64ffda;
+            border-color: #64ffda;
+        }
+
+        .btn-outline-highlight:hover {
+            color: #0a192f;
+            background-color: #64ffda;
+            border-color: #64ffda;
+        }
+
+        /* Animações de Fade-in ao rolar */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Linha decorativa */
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 1px;
+            background-color: #303c55;
+            margin-left: 20px;
+        }
+        
+        /* Estilos para o cabeçalho e links */
+        .nav-link {
+             color: #ccd6f6;
+        }
+        .nav-link:hover {
+            color: #64ffda;
+        }
+        .navbar-brand {
+            color: #64ffda !important;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .header-bg {
+             background-color: rgba(10, 25, 47, 0.85);
+             backdrop-filter: blur(10px);
+        }
+        
+        .card-project {
+             background-color: #112240;
+        }
+        
+        .writing-mode-vertical-rl {
+            writing-mode: vertical-rl;
+        }
+        .text-slate-200 { color: #e2e8f0; }
+        .text-slate-300 { color: #cbd5e1; }
+        .text-slate-400 { color: #94a3b8; }
+
+
+        /* Estilização da barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a192f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #303c55;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #495670;
+        }
