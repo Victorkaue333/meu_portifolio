@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vcitor Kauê - Desenvolvedor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#inicio" class="nav-brand" data-translate-key="nav_brand">Victor Dev</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" data-translate-key="nav_home">Início</a></li>
+                    <li><a href="#sobre" data-translate-key="nav_about">Sobre</a></li>
+                    <li><a href="#tecnologias" data-translate-key="nav_tech">Tecnologias</a></li>
+                    <li><a href="#projetos" data-translate-key="nav_projects">Projetos</a></li>
+                    <li><a href="#certificados" data-translate-key="nav_certificates">Certificados</a></li>
+                    <li><a href="#contato" data-translate-key="nav_contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Mudar tema">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container text-center">
+                <img src="images/victor.jpg" alt="Foto de Natan da Luz" class="profile-pic">
+                <h1 class="hero-title">Victor kauê</h1>
+                <p class="hero-subtitle">
+                    <span data-translate-key="hero_i_build">Eu crio soluções com </span><span id="typed-text"></span>
+                </p>
+                </div>
+        </section>
+
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <h2 class="section-title" data-translate-key="about_title">Sobre Mim</h2>
+                <p data-translate-key="about_p1">Olá! Sou um programador apaixonado por criar soluções inovadoras e eficientes. Com experiência em desenvolvimento full-stack, busco constantemente aprender novas tecnologias para aprimorar minhas habilidades e entregar produtos de alta qualidade.</p>
+                <p data-translate-key="about_p2">Meu objetivo é transformar ideias complexas em experiências de usuário intuitivas e funcionais, contribuindo para projetos desafiadores e de grande impacto.</p>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="content-section">
+            <div class="container">
+                <h2 class="section-title" data-translate-key="tech_title">Minha Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-card"> <i class="devicon-python-plain"></i> <span>Python</span> </div>
+                    <div class="tech-card"> <i class="devicon-django-plain"></i> <span>Django</span> </div>
+                    <div class="tech-card"> <i class="devicon-flutter-plain"></i> <span>Flutter</span> </div>
+                    <div class="tech-card"> <i class="devicon-html5-plain"></i> <span>HTML5</span> </div>
+                    <div class="tech-card"> <i class="devicon-css3-plain"></i> <span>CSS3</span> </div>
+                    <div class="tech-card"> <i class="devicon-bootstrap-plain"></i> <span>Bootstrap</span> </div>
+                    <div class="tech-card"> <i class="devicon-git-plain"></i> <span>Git</span> </div>
+                    <div class="tech-card"> <i class="devicon-github-original"></i> <span>GitHub</span> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="content-section">
+            <div class="container">
+                <h2 class="section-title" data-translate-key="projects_title">Projetos</h2>
+                <div class="card-grid">
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="https://placehold.co/400x250/121212/00ADB5?text=CyberShield" alt="Preview do Projeto CyberShield">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-translate-key="project1_title">Projeto Exemplo</h3>
+                            <p data-translate-key="project1_desc">Exemplo</p>
+                            <div class="project-tags">
+                                <span class="tag">Exemplo</span>
+                                <span class="tag">Exemplo</span>
+                                <span class="tag">Exemplo</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" data-translate-key="project_repo">Repositório <i data-lucide="github"></i></a>
+                                <a href="#" target="_blank" data-translate-key="project_deploy">Ver Online <i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section">
+            <div class="container text-center">
+                <h2 class="section-title" data-translate-key="contact_title">Vamos nos Conectar</h2>
+                <p data-translate-key="contact_desc">Estou disponível para freelance e novas oportunidades. Sinta-se à vontade para entrar em contato.</p>
+                <a href="mailto:seuemail@exemplo.com" class="btn btn-primary">
+                    <i data-lucide="mail"></i> seuemail@exemplo.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/[seu-usuario]" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/[seu-usuario]" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            </div>
+            <p data-translate-key="footer_copy">© 2024 [Seu Nome Aqui]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
