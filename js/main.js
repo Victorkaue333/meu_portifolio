@@ -83,7 +83,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth',
                     block: 'start'
                 });
+                // Fechar menu mobile após clicar
+                const menuWrapper = document.querySelector('.nav-menu-wrapper');
+                const menuToggle = document.querySelector('.mobile-menu-toggle');
+                if (menuWrapper && menuToggle) {
+                    menuWrapper.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
             }
         });
     });
+
+    // 6. MENU HAMBÚRGUER MOBILE
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenuWrapper = document.querySelector('.nav-menu-wrapper');
+
+    if (mobileMenuToggle && navMenuWrapper) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navMenuWrapper.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                mobileMenuToggle.classList.remove('active');
+                navMenuWrapper.classList.remove('active');
+            }
+        });
+    }
 });

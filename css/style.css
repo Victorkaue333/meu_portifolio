@@ -136,6 +136,38 @@ html[data-theme='light'] .navbar {
     background-color: rgba(249, 250, 251, 0.8);
 }
 .navbar.hidden { top: -100px; }
+
+/* Menu Hambúrguer */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover-color));
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    margin: 5px 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .nav-menu a {
     text-decoration: none;
     color: var(--text-muted-color);
@@ -814,7 +846,53 @@ i[data-lucide] {
 @media (max-width: 768px) {
     html { cursor: auto; }
     .custom-cursor { display: none; }
-    .nav-menu { display: none; }
+    
+    /* Mostrar botão hambúrguer */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Menu mobile */
+    .nav-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(15, 15, 15, 0.98), rgba(30, 30, 30, 0.98));
+        backdrop-filter: blur(20px);
+        transition: right 0.3s ease;
+        padding-top: 80px;
+        border-left: 1px solid var(--border-color);
+        z-index: 999;
+    }
+    
+    .nav-menu-wrapper.active {
+        right: 0;
+    }
+    
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+    
+    .nav-menu a::after {
+        left: 0;
+        transform: translateX(0);
+    }
+    
+    .nav-menu a:hover::after {
+        width: 60%;
+    }
+    
     .section-title { font-size: 2rem; }
     .tech-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 1rem; }
     .card-grid { grid-template-columns: 1fr; }
