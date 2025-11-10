@@ -32,21 +32,14 @@ Este portfólio é um site estático, construído do zero utilizando **HTML5**, 
 
 1. Clone o repositório:
    ```
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/Victorkaue333/meu_portifolio.git
    ```
-2. Abra o arquivo `index.html` em seu navegador preferido – não há dependências ou configurações adicionais.
 
 ---
 
 ## 📫 Contato
 
-Fique à vontade para entrar em contato através do [formulário do site](#) ou pelo e-mail: seuemail@dominio.com
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+Fique à vontade para entrar em contato pelo e-mail: kaue.alves.pg@gmail.com
 
 ---
 
